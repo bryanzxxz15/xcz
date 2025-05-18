@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="product.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BrewTopia Products</title>
+</head>
+<body>
+   <header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                <img src="dsa-removebg-preview.ico" alt="BrewTopia Logo" width="40" height="30" style="margin-right: 10px;">
+                <h1 style="margin: 0;">BrewTopia</h1>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="">Product</a></li>
+                    <li><a href="company.html">Our Company</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+  <section class="product-gallery">
+        <div class="container">
+            <h2>Our Coffee Products</h2>
+            <div class="product-list">
+
+                <div class="product-item scroll-animate">
+                    <img src="black coffee.jpg" alt="black coffee">
+                    <h3>Black Coffee</h3>
+                    <button onclick="showRecipe('black coffee')">Show About Flavor</button>
+                    <p id="black coffee" class="recipe" style="display: none;">
+                        Made from brewed coffee beans without any added milk or sugar.
+                        It’s simple and pure, with a strong, bold flavor.<br>
+
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="coffee latte.jpg" alt="Latte">
+                    <h3>Hot-Latte</h3>
+                    <button onclick="showRecipe('latte')">Show About Flavor</button>
+                    <p id="latte" class="recipe" style="display: none;">
+                        Espresso with steamed milk and a light layer of foam on top.
+                        It has a creamy texture with a mild coffee taste, perfect for those who prefer a smooth, not-too-strong coffee.<br>
+                    </p>
+                </div> 
+                <div class="product-item scroll-animate">
+                    <img src="espresszz.jpg" alt="espresso">
+                    <h3>Hot-Espresso</h3>
+                    <button onclick="showRecipe('cappuccino')">Show About Flavor</button>
+                    <p id="cappuccino" class="recipe" style="display: none;">
+                        A concentrated form of coffee served in small amounts, typically just a shot or two.
+                        It’s very strong and full of flavor, with a rich, intense taste.<br>
+
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="flat white.jpg" alt="flat-white">
+                    <h3>Flat White Coffee</h3>
+                    <button onclick="showRecipe('flat-white')">Show About Flavor</button>
+                    <p id="flat-white" class="recipe" style="display: none;">
+                        Similar to a latte, but with a higher ratio of coffee to milk and a velvety texture from the microfoam. <br>
+                        It's smooth and strong with less froth than a latte.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="hot mocha.jpg" alt="Mocha">
+                    <h3>Mocha</h3>
+                    <button onclick="showRecipe('mocha')">Show About Flavor</button>
+                    <p id="mocha" class="recipe" style="display: none;">
+                        A mix of espresso, steamed milk, and chocolate syrup, topped with whipped cream. <br>
+                        It's a sweet, rich coffee with chocolate undertones.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="matcha.jpg" alt="matcha">
+                    <h3>Hot-Matcha</h3>
+                    <button onclick="showRecipe('matcha')">Show About Flavor</button>
+                    <p id="matcha" class="recipe" style="display: none;">
+                        A blend of steamed milk and matcha (green tea powder), sometimes with espresso added for extra caffeine. <br>
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="brew.jpg" alt="brew">
+                    <h3>Cold-Brew</h3>
+                    <button onclick="showRecipe('brew')">Show About Flavor</button>
+                    <p id="brew" class="recipe" style="display: none;">
+                        Coffee brewed slowly in cold water for 12-24 hours. <br>
+                        It’s less acidic and smoother than regular iced coffee, with a naturally sweet flavor.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="iced coffee.jpg" alt="Iced-Coffee">
+                    <h3>Iced-Coffee</h3>
+                    <button onclick="showRecipe('Iced-Coffee')">Show About Flavor</button>
+                    <p id="Iced-Coffee" class="recipe" style="display: none;">
+                        Brewed coffee that’s chilled and served over ice. <br>
+                        It’s refreshing and can be served black or with milk, sugar, or flavored syrups.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="hz.jpg" alt="Hazelnut">
+                    <h3>Hazelnut</h3>
+                    <button onclick="showRecipe('Hazelnut')">Show About Flavor</button>
+                    <p id="Hazelnut" class="recipe" style="display: none;">
+                        Coffee flavored with hazelnut syrup or hazelnut extract, giving it a nutty,
+                        sweet taste that complements the richness of coffee. <br>
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="cold matcha.jpg" alt="Cold-Matcha">
+                    <h3>Cold-Matcha</h3>
+                    <button onclick="showRecipe('Cold-Matcha')">Show About Flavor</button>
+                    <p id="Cold-Matcha" class="recipe" style="display: none;">
+                        Iced matcha tea, often combined with milk or sweeteners,<br>
+                        resulting in a chilled drink with a smooth, grassy flavor.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="mach.jpg" alt="mach">
+                    <h3>Cold-Macchiato</h3>
+                    <button onclick="showRecipe('mach')">Show About Flavor</button>
+                    <p id="mach" class="recipe" style="display: none;">
+                        Espresso, chocolate syrup, and milk served cold over ice, often topped with whipped cream. <br>
+                        It’s a sweet and indulgent coffee-chocolate combination.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="hot chocolate.jpg" alt="Nitro Coffee">
+                    <h3>Hot-Chocolate</h3>
+                    <button onclick="showRecipe('hot-chocolate')">Show About Flavor</button>
+                    <p id="hot-chocolate" class="recipe" style="display: none;">
+                        A comforting, sweet drink made with milk and melted chocolate, often topped with whipped cream or marshmallows. <br>
+                        It’s rich and creamy, a great non-coffee option.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="iced-mocha-black.jpg" alt="iced-mocha">
+                    <h3>Iced-Mocha</h3>
+                    <button onclick="showRecipe('iced-mocha')">Show About Flavor</button>
+                    <p id="iced-mocha" class="recipe" style="display: none;">
+                        Espresso, chocolate syrup, and milk served cold over ice, often topped with whipped cream. <br>
+                        It’s a sweet and indulgent coffee-chocolate combination
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="whiet.jpg" alt="Irish Coffee">
+                    <h3>Iced-White Chocolate</h3>
+                    <button onclick="showRecipe('whiet')">Show About Flavor</button>
+                    <p id="whiet" class="recipe" style="display: none;">
+                        Similar to iced mocha, but with white chocolate syrup instead of regular chocolate. <br>
+                        It’s a sweeter, creamy coffee drink.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="matcha-shake.jpg" alt="Matcha Shake">
+                    <h3>Matcha Shake</h3>
+                    <button onclick="showRecipe('matcha-shake')">Show About Flavor</button>
+                    <p id="matcha-shake" class="recipe" style="display: none;">
+                        A refreshing green tea shake made with premium matcha powder, milk, and ice.
+                        It has a vibrant green color and a balanced, earthy flavor.<br>
+                        P70 Medium | P90 Large
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="chocolate-shake.jpg" alt="Chocolate Shake">
+                    <h3>Chocolate Shake</h3>
+                    <button onclick="showRecipe('chocolate-shake')">Show About Flavor</button>
+                    <p id="chocolate-shake" class="recipe" style="display: none;">
+                        A creamy, indulgent shake made with rich chocolate syrup, milk, and ice.
+                        Perfect for chocolate lovers looking for a sweet treat.<br>
+                        P70 Medium | P90 Large
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="vanilla-shake.jpg" alt="Vanilla Shake">
+                    <h3>Vanilla Shake</h3>
+                    <button onclick="showRecipe('vanilla-shake')">Show About Flavor</button>
+                    <p id="vanilla-shake" class="recipe" style="display: none;">
+                        A classic shake with smooth vanilla flavor, made with vanilla syrup, milk, and ice.
+                        Simple yet delicious with a comforting taste.<br>
+                        P70 Medium | P90 Large
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="strawberry-shake.jpg" alt="Strawberry Shake">
+                    <h3>Strawberry Shake</h3>
+                    <button onclick="showRecipe('strawberry-shake')">Show About Flavor</button>
+                    <p id="strawberry-shake" class="recipe" style="display: none;">
+                        A fruity and refreshing shake made with real strawberry puree, milk, and ice.
+                        Sweet and tangy with a vibrant pink color.<br>
+                        P70 Medium | P90 Large
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="mango-shake.jpg" alt="Mango Shake">
+                    <h3>Mango Shake</h3>
+                    <button onclick="showRecipe('mango-shake')">Show About Flavor</button>
+                    <p id="mango-shake" class="recipe" style="display: none;">
+                        A tropical delight made with sweet mango puree, milk, and ice.
+                        Creamy and fruity with a bright orange color.<br>
+                        P70 Medium | P90 Large
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="hot-mocha.jpg" alt="Hot Mocha">
+                    <h3>Hot Mocha</h3>
+                    <button onclick="showRecipe('hot-mocha')">Show About Flavor</button>
+                    <p id="hot-mocha" class="recipe" style="display: none;">
+                        Espresso with chocolate syrup and steamed milk.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="cappuccino.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <button onclick="showRecipe('cappuccino')">Show About Flavor</button>
+                    <p id="cappuccino" class="recipe" style="display: none;">
+                        Espresso with equal parts steamed milk and foam.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="coffee-americano.jpg" alt="Coffee Americano">
+                    <h3>Coffee Americano</h3>
+                    <button onclick="showRecipe('coffee-americano')">Show About Flavor</button>
+                    <p id="coffee-americano" class="recipe" style="display: none;">
+                        Espresso diluted with hot water for a lighter flavor.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="hazelnut-coffee.jpg" alt="Hazelnut Coffee">
+                    <h3>Hazelnut Coffee</h3>
+                    <button onclick="showRecipe('hazelnut-coffee')">Show About Flavor</button>
+                    <p id="hazelnut-coffee" class="recipe" style="display: none;">
+                        Coffee with sweet hazelnut flavoring.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="vanilla-coffee.jpg" alt="Vanilla Coffee">
+                    <h3>Vanilla Coffee</h3>
+                    <button onclick="showRecipe('vanilla-coffee')">Show About Flavor</button>
+                    <p id="vanilla-coffee" class="recipe" style="display: none;">
+                        Coffee with smooth vanilla flavor.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="iced-irish.jpg" alt="Iced Irish">
+                    <h3>Iced Irish</h3>
+                    <button onclick="showRecipe('iced-irish')">Show About Flavor</button>
+                    <p id="iced-irish" class="recipe" style="display: none;">
+                        Coffee with Irish cream flavor over ice.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="frappuccino.jpg" alt="Frappuccino">
+                    <h3>Frappuccino</h3>
+                    <button onclick="showRecipe('frappuccino')">Show About Flavor</button>
+                    <p id="frappuccino" class="recipe" style="display: none;">
+                        Blended iced coffee beverage.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="iced-caramel.jpg" alt="Iced Caramel">
+                    <h3>Iced Caramel</h3>
+                    <button onclick="showRecipe('iced-caramel')">Show About Flavor</button>
+                    <p id="iced-caramel" class="recipe" style="display: none;">
+                        Coffee with caramel flavor served cold.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="flat-coffee.jpg" alt="Flat Coffee">
+                    <h3>Flat Coffee</h3>
+                    <button onclick="showRecipe('flat-coffee')">Show About Flavor</button>
+                    <p id="flat-coffee" class="recipe" style="display: none;">
+                        Coffee with microfoam for a velvety texture.
+                    </p>
+                </div>
+                <div class="product-item scroll-animate">
+                    <img src="caramel-coffee.jpg" alt="Caramel Coffee">
+                    <h3>Caramel Coffee</h3>
+                    <button onclick="showRecipe('caramel-coffee')">Show About Flavor</button>
+                    <p id="caramel-coffee" class="recipe" style="display: none;">
+                        Coffee with sweet caramel flavor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BrewTopia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to show the recipe when the button is clicked
+        function showRecipe(productId) {
+            var recipe = document.getElementById(productId);
+            if (recipe.style.display === "none") {
+                recipe.style.display = "block";
+            } else {
+                recipe.style.display = "none";
+            }
+        }
+
+     
+    </script>
+</body>
+</html>

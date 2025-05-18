@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="company.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BrewTopia Products</title>
+    <link rel="stylesheet" href="company.css">
+    <title>About BrewTopia</title>
+</head>
+<body>
+    <header class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                <img src="dsa-removebg-preview.ico" alt="BrewTopia Logo" width="40" height="30" style="margin-right: 10px;">
+                <h1 style="margin: 0;">BrewTopia</h1>
+            </a>
+        </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">Our Company</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section class="section vision scroll-animate">
+    <h2>Our Vision</h2>
+    <p>We create a coffee system that blends innovation, sustainability, and community—empowering coffee shops to deliver a smooth and enjoyable experience. Our main goal is for people to enjoy their coffee not just for its flavor, but because of the accuracy, speed, and efficiency enabled by our system.</p>
+  </section>
+
+  <section class="section mission scroll-animate">
+    <h2>Mission Statement</h2>
+    <p>Our mission is to revolutionize coffee ordering with a smart, user-friendly system that speeds up service, reduces delays, and improves customer satisfaction. We aim to simplify operations, cut down staffing needs, and deliver a fast, consistent, and high-quality coffee experience for both customers and businesses.</p>
+  </section>
+
+  <section class="section core-values scroll-animate">
+    <h2>Core Values</h2>
+    <p>At Brewtopia, our core values define how we operate, engage with stakeholders, and enhance the digital coffee shop experience.</p>
+  </section>
+</div>
+
+<section class="section target-goals scroll-animate">
+    <h2>Our Target Goals</h2>
+    <p>At BrewTopia, we are committed to creating a lasting impact on the coffee industry. Our goals include:</p>
+    <ul>
+      <li>Continuously improving our product offerings by sourcing the finest coffee beans from ethical and sustainable farms worldwide.</li>
+      <li>Expanding our reach to bring our unique coffee experience to more locations, making BrewTopia accessible to coffee lovers everywhere.</li>
+      <li>A community of coffee enthusiasts who appreciate quality, customization, and innovation in every cup.</li>
+    </ul>
+  </section>
+
+<section class="section our-product scroll-animate">
+    <h2>Our Products</h2>
+    <p>We specialize in premium, handpicked coffee beans from around the world, roasted to perfection. Our unique selection allows you to customize your coffee experience, from strength and flavor profile to how it's brewed.</p>
+  </section>
+
+  <section class="section unique-system scroll-animate">
+    <h2>Our Unique System</h2>
+    <p>What sets BrewTopia apart is our customizable system. We believe that coffee should be personal. Our system allows you to create your perfect cup, tailored to your unique preferences. Whether you're brewing at home or in one of our cafés, our system provides a seamless and personalized experience.</p>
+  </section>
+
+
+<section class="section target-goals scroll-animate">
+    <h2>Our Target Goals</h2>
+    <p>At BrewTopia, we are committed to creating a lasting impact on the coffee industry. Our goals include:</p>
+    <ul>
+      <li>Continuously improving our product offerings by sourcing the finest coffee beans from ethical and sustainable farms worldwide.</li>
+      <li>Expanding our reach to bring our unique coffee experience to more locations, making BrewTopia accessible to coffee lovers everywhere.</li>
+      <li>A community of coffee enthusiasts who appreciate quality, customization, and innovation in every cup.</li>
+    </ul>
+  </section>
+
+
+<div class="container">
+  <section class="section about-us scroll-animate">
+    <h2>About Us</h2>
+    <p>At BrewTopia, we are passionate about coffee. We offer a wide range of coffee products that cater to every taste. Whether you prefer a classic espresso, a creamy latte, or something more adventurous, BrewTopia has something for you.</p>
+  </section>
+
+      
+    <footer>
+        <p>&copy; 2025 BrewTopia. All Rights Reserved.</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  const animatedElements = document.querySelectorAll(".scroll-animate");
+
+  function checkVisibility() {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    animatedElements.forEach(el => {
+      const elementTop = el.getBoundingClientRect().top;
+
+      if (elementTop < triggerBottom) {
+        el.classList.add("visible");
+      } else {
+        el.classList.remove("visible");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility();
+});
+
+    </script>
+</body>
+</html>
